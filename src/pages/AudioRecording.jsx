@@ -48,7 +48,7 @@ const AudioRecording = ({ contactRefP, mobileNavFuncP, mobileNavStateP }) => {
             <button className="custom bg-heroBlue2 text-white text-lg rounded-md px-4 font-semibold overflow-visible" onClick={() => mobileNavFuncP()}>CONTACT US</button>
         </div>
         <div className={`sub-email z-40 ${mobileNavStateP ? 'show' : ''}`}>
-          <div className='w-6 absolute top-7 right-4 z-50' onClick={() => mobileNavFuncP()}>
+          <div className='w-6 absolute top-7 right-4 z-50 cursor-pointer' onClick={() => mobileNavFuncP()}>
             <img src={exitIcon} alt="" />
           </div>
           <GlobalContact contactRefPP={contactRefP}/>
